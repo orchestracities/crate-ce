@@ -4,12 +4,13 @@ The CrateDB Community Edition (CrateDB CE) does not include any Enterprise featu
 ## Tags
 
 - 4.0.4
+- 4.0.12
 
 
 # How to Use This Image
 
 ```sh
-$ docker run -p 4200:4200 orchestracities/crate:4.0.4 -Cdiscovery.type=single-node
+$ docker run -p 4200:4200 orchestracities/crate:4.0.12 -Cdiscovery.type=single-node
 
 ```
 
