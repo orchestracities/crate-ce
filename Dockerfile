@@ -3,7 +3,7 @@
 ####################
 # Image Base
 FROM centos:7 AS builder
-ENV version 4.2.1
+ENV version 4.1.4
 # Git install
 RUN yum install -y git \
     # Python 3.6 repository and packages
