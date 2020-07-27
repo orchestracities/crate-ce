@@ -6,6 +6,7 @@ The CrateDB Community Edition (CrateDB CE) does not include any Enterprise featu
 - 4.0.4
 - 4.0.12
 - 4.1.1
+- 4.1.4
 - 4.2.1
 
 
