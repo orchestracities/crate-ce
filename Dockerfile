@@ -3,7 +3,7 @@
 ####################
 # Image Base
 FROM centos:7 AS builder
-ENV version 4.0.12
+ENV version 4.1.1
 # Git install
 RUN yum install -y git \
     # Python 3.6 repository and packages
@@ -93,13 +93,13 @@ ENV CRATE_HEAP_SIZE 512M
 # postgres protocol ports: 5432 tcp
 EXPOSE 4200 4300 5432
 
-LABEL maintainer="implus.co <technology@implustech.com>" \
+LABEL maintainer="orchestraticies.com <info@orchestraticies.com>" \
     org.label-schema.schema-version="1.0" \
     org.label-schema.build-date="2020-01-16T13:56:43.986536" \
     org.label-schema.name="crate" \
     org.label-schema.description="CrateDB is a distributed SQL database handles massive amounts of machine data in real-time." \
     org.label-schema.url="https://crate.io/products/cratedb/" \
-    org.label-schema.vcs-url="https://github.com/implustech/crate-ce" \
+    org.label-schema.vcs-url="https://github.com/orchestracities/crate-ce" \
     org.label-schema.vendor="Crate.io" \
     org.label-schema.version="$version"
 
