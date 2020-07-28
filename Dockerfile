@@ -3,7 +3,7 @@
 ####################
 # Image Base
 FROM centos:7 AS builder
-ENV version 4.2.1
+ENV version 4.0.4
 # Git install
 RUN yum install -y git \
     # Python 3.6 repository and packages
@@ -81,8 +81,7 @@ WORKDIR /data
 # Run CrateDB-CE
 USER crate
 COPY --from=builder --chown=crate:crate /tmp/crate-ce* /crate/
-COPY --chown=1000:0 config/crate.yml /crate/config/crate.yml
-COPY --chown=1000:0 config/log4j2.properties /crate/config/log4j2.properties
+COPY --chown=1000:0 config /crate/config
 ENV PATH=$PATH:/crate/bin
 
 # Default heap size for Docker, can be overwritten by args
